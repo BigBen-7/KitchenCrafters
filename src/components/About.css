@@ -1,0 +1,224 @@
+body {
+  font-family: "Karla", sans-serif;
+}
+.about-section {
+  background-color: #f8f8f8;
+  padding: 4rem 0;
+}
+
+.about-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* AboutSection.css */
+.about-heading {
+  position: relative;
+  height: 400px; /* Set the desired height */
+  background-image: url("/public/images/amazing-colorful-italian-cuisine-ingredients.jpg");
+  background-size: cover;
+  background-position: center;
+  font-size: 2rem;
+}
+
+.overlay-text {
+  width: 100%;
+  height: 92%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(5, 5, 55, 0.5);
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Rest of the existing styles... */
+
+.about-description {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.about-image img {
+  max-width: 10%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.about-features {
+  list-style-type: disc;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+/* AboutSection.css */
+.about-founder {
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.about-founder span {
+  font-weight: bold;
+}
+
+.about-founder-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.about-founder-image img {
+  width: 80%;
+  /* height: auto; */
+  border-radius: 2%;
+  margin-bottom: 1rem;
+}
+
+.about-founder-image p {
+  font-size: 1rem;
+}
+
+.about-kc-info {
+  background: linear-gradient(to right, #050537, #0f0f73e6);
+  padding: 2rem;
+  height: 100%;
+  color: #f8f8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.about-kc-info p {
+  font-size: 1.2rem;
+}
+
+.abt-founder-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-cta {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  color: #050537;
+  background: linear-gradient(to right, #514606, #ffd700);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.about-cta:hover {
+  color: #ffd700;
+  font-weight: bold;
+  background: linear-gradient(to top, #050537, #050537);
+}
+
+@media (max-width: 768px) {
+  /* Apply these styles only for screen width up to 768px */
+  .about-heading {
+    font-size: 1.3rem;
+    height: 250px; /* Adjust the height for mobile view */
+  }
+
+  .overlay-text {
+    padding: 0.5rem; /* Adjust padding for mobile view */
+  }
+
+  .about-description {
+    font-size: 1rem; /* Adjust font size for mobile view */
+    margin-bottom: 1rem; /* Adjust margin for mobile view */
+  }
+
+  .about-image img {
+    max-width: 20%; /* Adjust image size for mobile view */
+    margin-bottom: 1rem; /* Adjust margin for mobile view */
+  }
+
+  .about-founder {
+    font-size: 1rem; /* Adjust font size for mobile view */
+    margin-bottom: 1rem; /* Adjust margin for mobile view */
+  }
+
+  .about-founder-image img {
+    width: 100%; /* Adjust image width for mobile view */
+    border-radius: 0; /* Remove border radius for mobile view */
+    margin-bottom: 0.5rem; /* Adjust margin for mobile view */
+  }
+
+  .about-founder-image p {
+    font-size: 0.9rem; /* Adjust font size for mobile view */
+  }
+
+  .about-kc-info p {
+    font-size: 1rem; /* Adjust font size for mobile view */
+  }
+
+  .about-cta {
+    padding: 0.5rem 1rem; /* Adjust padding for mobile view */
+    font-size: 0.9rem; /* Adjust font size for mobile view */
+  }
+}
+
+/* Mobile Styles */
+/* @media (max-width: 768px) {
+  .about-section {
+    padding: 2rem 0;
+  }
+
+  .about-heading {
+    height: 300px;
+    font-size: 1.5rem;
+  }
+
+  .overlay-text {
+    height: 80%;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+  }
+
+  .about-founder {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .about-founder-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .about-founder-image img {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+
+  .about-founder-image p {
+    font-size: 1rem;
+    text-align: center;
+    margin: 0;
+  }
+  .abt-founder-container {
+    flex-direction: column;
+  }
+  .about-kc-info {
+    width: 80%;
+    margin: 1rem;
+  }
+} */

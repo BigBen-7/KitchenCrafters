@@ -1,0 +1,108 @@
+/* Navbar.css */
+.logo {
+  font-family: "Frijole", cursive;
+  /* background-color: #000080; */
+}
+
+/* General styles for larger screens (Desktop view) */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #050537;
+  padding: 1rem;
+  color: #daa520;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 1rem;
+}
+.nav-icons {
+  display: none;
+}
+.nav-links li button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  font-size: 1rem;
+  /* display: none; */
+  transition: color 0.3s ease, transform 0.2s ease; /* Added transform transition */
+}
+
+.nav-links li button:hover {
+  color: #ffd700; /* Hover color for buttons */
+  transform: scale(1.1); /* Scale up the button on hover */
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  /* Add other styles for the search bar */
+}
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+  .logo {
+    color: #daa520;
+    font-family: "Frijole", cursive;
+    font-size: 1.2rem;
+  }
+
+  .navbar {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 98%;
+    background-color: #050537;
+    box-shadow: 2px 32px 15px rgba(0, 0, 0, 0.2);
+  }
+  .nav-links {
+    display: none;
+  }
+  .search-bar {
+    display: none;
+  }
+
+  /* Navbar should be at the bottom of the screen  Display the nav icons */
+  .nav-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    position: fixed;
+    bottom: 0; /*Place icons at the bottom of the screen  */
+    left: 0;
+    width: 80%;
+    padding: 0.8rem 0;
+    margin: 1rem 2.5rem;
+    border-radius: 15px;
+    background-color: rgba(218, 165, 32, 1);
+    z-index: 999;
+  }
+
+  .nav-icons li {
+    list-style: none;
+  }
+
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button img {
+    width: 25px;
+  }
+}

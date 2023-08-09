@@ -1,0 +1,38 @@
+/* ConstructionPage.css */
+.construction-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f8f8f8;
+  text-align: center;
+  overflow: hidden;
+}
+
+.fade-in {
+  animation: fade-in 1.5s ease-in-out;
+}
+
+.construction-page h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.construction-page p {
+  font-size: 1.2rem;
+  color: #070749;
+}
+
+.construction-page img {
+  width: 35rem;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
